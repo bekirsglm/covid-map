@@ -1,76 +1,50 @@
-# Gerekli Kütüphaneler
+# 🦠 COVID-19 Küresel Harita
 
-- axios
-- react-router-dom
-- react-icons
-- tailwindcss
-- millify
-- react-simple-maps
-- react-teting-library
-- jest
-- @reduxjs/toolkit
-- react-redux
+Gerçek zamanlı COVID-19 verilerini dünya haritası üzerinde görselleştiren interaktif bir web uygulaması.  
+**React**, **React Simple Maps** ve **RapidAPI** kullanılarak geliştirildi.  
+Modern arayüzü ve dinamik veri yapısıyla hem bilgilendirici hem de kullanıcı dostu bir deneyim sunuyor.
 
-# Kaynaklar
+---
 
-- Toplam İstatistikleri API:
-- - https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/playground/apiendpoint_191c58c7-a995-4024-a5ee-41043d79e542
+## 🚀 Özellikler
 
-### TDD (Test Driven Development) Süreci
+- 🌍 **Küresel Görselleştirme:** Dünya genelindeki COVID-19 verilerini interaktif harita üzerinde gösterir.  
+- 📊 **Ülke Detayları:** Her ülke için vaka, ölüm ve iyileşen sayıları detaylı olarak görüntülenir.  
+- 🔄 **Gerçek Zamanlı Veriler:** Tüm istatistikler **RapidAPI** üzerinden dinamik olarak çekilir.  
+- 🧭 **Etkileşimli Harita:** Üzerine gelme, tıklama ve yakınlaştırma gibi kullanıcı etkileşimleri desteklenir.  
+- 💡 **Responsive Tasarım:** Tüm cihazlara uyumlu, modern ve sade arayüz.  
+- 🧱 **Bileşen Tabanlı Yapı:** React mimarisi ile modüler ve okunabilir bir kod yapısı.
 
-- Test güdümlü geliştirme, yazılım geliştirme sürecinde testlerin koddan önce yazıldığı bir tekniktir.
-- Red-to-Green test olarak geçer.
+---
 
-### TDD Süreci
+## 🛠️ Kullanılan Teknolojiler
 
-1. Test Yaz: İstenen özellikler için önce testler yazılır
-2. Test Çalıştır: Testler başarısz olur
-3. Kod Yaz: Testleri geçicek minimum kodu yaz
-4. Test Çalıştır: Tüm testler başarılı olmalı
-5. Refactor: Kodu iyileştir, testlerin hala geçmesi gerekir.
+- ⚛️ **React.js** – Ön yüz geliştirme  
+- 🗺️ **React Simple Maps** – Harita görselleştirmesi  
+- 🌐 **RapidAPI** – COVID-19 verilerinin kaynağı  
+- 🎨 **TailwindCSS** – Arayüz tasarımı  
+- 🔌 **Axios** – API veri çekme işlemleri  
+- ⚡ **Vite** – Hızlı geliştirme ortamı  
+- 🧹 **ESLint** – Kod düzeni ve tutarlılık kontrolü  
 
-### TDD Avantajları
+---
 
-- Daha temiz ve sürdürülebilir kod
-- Erken hata tepiti
-- Değişiklik yaparken güven sağlar
+## 💻 Kurulum ve Çalıştırma
 
-# Selector Anatomisi
 
-- Selector, test ortamında renderlanan elementleri almak için kullandığımız methodlardır.
-- Seçiciler temelde 3 anaa parçadan oluşur.
+# Projeyi klonla
+git clone https://github.com/bekirsglm/covid-map.git
 
-1. Yöntem
+# Proje klasörüne gir
+cd covid-map
 
-- Get: Ekrandaki elementi alır, bulamazsa hata verir
-  Bir elementin ekranda olduğunu kontrol etmek için kullanabiliriz.
-- Query: Ekrandaki elementi alır, bulamazsa hata vermez null döndürür.
-  Ekranda olmadığını düşündüğümüz bir elementi almak için kullanabilir
-- Find: Ekrana asenkron olarak basılan elementleri almak için kullanılır.
-  Eğer api isteğinin ardından ekrana asenkron olarak basılan bir element varsa bu yöntemi kullanırız.
+# Bağımlılıkları yükle
+npm install
 
-2. All İfadesi (Opsiyonel)
+# Uygulamayı çalıştır
+npm run dev
 
-- Eğerki ekranan aynı koşula uyan birden fazla element almak istiyorsak kullandığımız yöntemin devamına `All` ifadesini ekleriz
-- All ifadesi kullanırsak dönen cevap her zaman bir dizi içerisinde olur.
-- `getAllBy` | `queryAllBy` | `findAllBy`
 
-3. Sorgu
+## EKRAN GÖRÜNTÜSÜ
 
-- Hangi yöntemle elementi seçiceğimizi belirleyen methodlar
-- ByRole
-- ByText
-- ByTestId
-- ByAltText
-- ByTitle
-- ByDisplayValue
-- ByPlaceholderText
-- ByLabel
 
-- Artık yukarıdaki 3 parçayı istediğiniz gibi birleştirebilirsiniz
-- `queryByTitle()` | `findAllByText()` | `getAllByTestId()`
-
-# 100% Test Covarage
-
-- Projenin dimaik olan bütün özelleklerinin test edilmiş olma durumuna.
-# covid-map
