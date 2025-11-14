@@ -44,7 +44,22 @@ npm install
 # Uygulamayı çalıştır
 npm run dev
 
+## 🧠 Öğrendiklerim
+
+Bu proje bana şunları kazandırdı:
+
+Üçüncü parti API entegrasyonu
+
+Dinamik veri yönetimi ve güncelleme
+
+React Simple Maps ile harita etkileşimleri
+
+TailwindCSS ile responsive arayüz tasarımı
+
+Veri odaklı bileşen yapısı oluşturma
+
 
 ## EKRAN GÖRÜNTÜSÜ
+![EkranKayd2025-11-13225634-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/00900eb4-12ca-4629-8407-dbea66d9cedd)
 
 
